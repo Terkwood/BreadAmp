@@ -1,6 +1,7 @@
 import { FunctionalComponent, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
+import Header from "./header";
 import Home from "../routes/home";
 import NotFoundPage from "../routes/notfound";
 
@@ -19,7 +20,8 @@ const App: FunctionalComponent = () => {
   };
 
   return (
-    <div id="app">
+    <div id="app" style={{ width: 300 }} className="window">
+      <Header />
       <Router onChange={handleRoute}>
         <Route path="/" component={Home} />
         <NotFoundPage default />
