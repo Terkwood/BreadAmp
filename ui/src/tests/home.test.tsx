@@ -6,7 +6,7 @@ import Home from "../routes/home/index";
 describe("Initial Test of Home", () => {
   test("Home renders two items", () => {
     const context = shallow(<Home />);
-    expect(context.find("h1").text()).toBe("Home");
+    expect(context.find("h1").text()).toBe("Home 🍞");
     expect(context.find("p").length).toBe(1);
   });
 });

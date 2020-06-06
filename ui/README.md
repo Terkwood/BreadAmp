@@ -1,6 +1,6 @@
-# BreadAmp Browser UI
+# BreadAmp Browser UI 🍞
 
-Minimal browser controls for the device.
+Minimal browser controls for the device. 🍞
 
 ## Dev and Build
 

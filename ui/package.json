@@ -23,6 +23,7 @@
     "build/*"
   ],
   "dependencies": {
+    "98.css": "^0.1.16",
     "preact": "^10.3.1",
     "preact-jsx-chai": "^3.0.0",
     "preact-markup": "^2.0.0",
@@ -56,7 +57,7 @@
     "sirv-cli": "^1.0.0-next.3",
     "ts-jest": "^25.2.0",
     "ts-loader": "^6.2.1",
-    "typescript": "3.7.5",
+    "typescript": "3.9.5",
     "typings-for-css-modules-loader": "^1.7.0"
   }
 }

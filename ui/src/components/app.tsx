@@ -4,6 +4,8 @@ import { Route, Router, RouterOnChangeArgs } from "preact-router";
 import Home from "../routes/home";
 import NotFoundPage from "../routes/notfound";
 
+import "98.css";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 if ((module as any).hot) {
   // tslint:disable-next-line:no-var-requires
