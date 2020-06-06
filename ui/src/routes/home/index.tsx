@@ -12,10 +12,33 @@ const post = async (command: string) =>
   });
 
 const Home: FunctionalComponent = () => {
+  const [msg, setMsg] = useState("stopped");
+  const [isPlaying, setIsPlaying] = useState(false);
+  const prevTrack = () => {
+    setMsg("prev");
+    return post("prev");
+  };
+  const nextTrack = () => {
+    setMsg("next");
+    return post("next");
+  };
+
   return (
-    <div>
-      <h1>Home 🍞</h1>
-      <p>Welcome to BreadAmp. 🍞</p>
+    <div className="window-body">
+      <p style={{ textAlign: "center" }}>{msg}</p>
+      <div className="field-row" style={{ justifyContent: "center" }}>
+        <button onClick={() => prevTrack()}>⏪</button>
+        <button
+          onClick={() => {
+            setIsPlaying(!isPlaying);
+            setMsg(!isPlaying ? "playing" : "stopped");
+            return post(!isPlaying ? "play" : "stop");
+          }}
+        >
+          {isPlaying ? "⏹️" : "▶️"}
+        </button>
+        <button onClick={() => nextTrack()}>⏩</button>
+      </div>
     </div>
   );
 };
