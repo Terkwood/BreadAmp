@@ -1,10 +1,10 @@
 import { h } from "preact";
 import { Link } from "preact-router/match";
-import "98.css";
+
 const Header = () => {
     return (
         <header className="title-bar" >
-            <div className="title-bar-text" >"BreadAmp 🍞"</div>
+            <div className="title-bar-text" >BreadAmp 🍞</div>
             <nav>
                 <div className="title-bar-controls" >
                     <Link href="/" >
