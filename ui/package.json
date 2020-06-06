@@ -16,7 +16,7 @@
     }
   },
   "lint-staged": {
-    "*.{css,md,scss}": "prettier --write",
+    "*.{css,md,scss,json,md}": "prettier --write",
     "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "eslintIgnore": [
